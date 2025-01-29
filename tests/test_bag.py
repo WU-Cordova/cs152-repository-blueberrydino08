@@ -58,6 +58,7 @@ def test_distinct_items_returns_unique_items(bag: Bag[int]):
     bag.add(8)
     bag.add(8)
     bag.add(9)
+    #how many color of marbles are in my bag
     assert set(bag.distinct_items()) == {8, 9}
 
 
@@ -74,5 +75,6 @@ def test_clear_removes_all_items(bag: Bag[int]):
     bag.add(13)
     bag.clear()
     assert len(bag) == 0
+    #testing if the key returns False and the value returns 0
     assert 12 not in bag
     assert 13 not in bag
